@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+    --color-one: #03045E;
+    --color-two: #023E8A;
+    --color-three: #0077B6;
+    --color-four: #0096C7;
+    --color-five: #00B4D8;
+    --color-six: #48CAE4;
+    --color-seven: #90E0EF;
+    --color-eight: #ADE8F4;
+    --color-nine: #CAF0F8;
+    --color-gradient: linear-gradient(to right, #48bfe3, #56cfe1, #64dfdf, #72efdd, #80ffdb);
+
+    --font-one: 'Share Tech Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-one);
+}
+
+/**
+* ! Start Of header
+**/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: var(--color-gradient);
+}
+
+header h1 {
+    margin: 10px 50px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+    list-style-type: none;
+}
+header nav ul i {
+    color: var(--color-one);
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: var(--color-one);
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: ease-in-out .2s;
+}
+
+header nav ul a:hover {
+    color: #4ea8de;
+    text-shadow: 1px 1px 1px black;
+    transition: ease-in-out .2s;
+}
+
+/**
+* ! Start of Main Section
+**/
+
+main {
+    display: flex;
+    align-items: center;
+
+    background-image: linear-gradient(to right, #5390d9, #4ea8de);
+}
+
+main .logo {
+    position: absolute;
+    width: 100px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+main .web-img {
+    width: 450px;
+    margin: 45px;
+    box-shadow: 1px 1px 3px black;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+/**
+* ! Start of Aside Section
+**/
+
+main section {
+    width: 400px;
+}
+
+main aside h1 {
+    text-align: center;
+    background-image: var(--color-gradient);
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px black;
+    padding: 10px;
+    margin: 10px;
+}
+
+main aside p {
+    padding: 25px;
+}
+
+section {
+    display: flex;
+}
